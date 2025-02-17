@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #850c73;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #168a07;
+    color: #850c73;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input[type="text"], input[type="number"], select {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+#offspringImageContainer {
+    position: relative;
+    width: 300px; /* Adjust based on your image size */
+    height: 300px; /* Adjust based on your image size */
+}
+
+#offspringImageContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mutation {
+    display: inside;
+}
+
+.quest {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+}
+
+.quest h3 {
+    margin-top: 0;
+}
+
+.quest p {
+    margin: 0.5rem 0;
+}
+
+.quest button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.quest button:hover {
+    background-color: #555;
+}

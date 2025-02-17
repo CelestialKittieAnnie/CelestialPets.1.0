@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeding - Celestial Creatures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Breeding</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breeding.html">Breeding</a></li>
+                <li><a href="owned_pets.html">Owned Pets</a></li>
+                <li><a href="incubating_eggs.html">Incubating Eggs</a></li>
+                <li><a href="quest_journal.html">Quest Journal</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="signup_login.html">Sign Up / Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="breeding">
+            <h2>Breed Your Pets</h2>
+            <form id="breedingForm">
+                <label for="parent1">Parent 1 (Male):</label>
+                <select id="parent1" onchange="updateParentImage('parent1')">
+                    <!-- Options for parent 1 will be populated dynamically -->
+                </select>
+                <img id="parent1Image" src="A:\Games\Celestial Companions\Lib\images\default_test.png" alt="Parent 1 Image">
+                
+                <label for="parent2">Parent 2 (Female):</label>
+                <select id="parent2" onchange="updateParentImage('parent2')">
+                    <!-- Options for parent 2 will be populated dynamically -->
+                </select>
+                <img id="parent2Image" src="A:\Games\Celestial Companions\Lib\images\default_test.png" alt="Parent 2 Image">
+                
+                <button type="button" onclick="breedPets()">Breed</button>
+            </form>
+        </section>
+        <section id="offspring">
+            <h2>Offspring</h2>
+            <div id="offspringDetails">
+                <!-- Offspring details will be displayed here -->
+                <div id="offspringImageContainer">
+                    <img id="offspringBaseImage" src="A:\Games\Celestial Companions\Lib\images\base_bodies\BackgroundEraser_20240705_165346967.png" alt="Offspring Base Image">
+                    <img id="offspringMutation2" class="mutation" src="A:\Games\Celestial Companions\Lib\images\unique_pattern_overlays\Adobe_Express_20231004_2003090_1.png" alt="Red Flower Pattern">
+                    <img id="offspringMutation1" class="mutation" src="A:\Games\Celestial Companions\Lib\images\expressions\BackgroundEraser_20240705_164927993.png" alt="Happy Expression">
+                    <!-- Add more mutation layers as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

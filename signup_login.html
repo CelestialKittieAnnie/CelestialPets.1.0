@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Log In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breeding.html">Breeding</a></li>
+            <li><a href="owned_pets.html">Owned Pets</a></li>
+            <li><a href="incubating_eggs.html">Incubating Eggs</a></li>
+            <li><a href="quest_journal.html">Quest Journal</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="signup_login.html">Sign Up / Log In</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        <div id="signUpForm">
+            <h2>Sign Up</h2>
+            <input type="email" id="signUpEmail" placeholder="Email" required>
+            <input type="text" id="signUpUsername" placeholder="Username" required>
+            <input type="password" id="signUpPassword" placeholder="Password" required>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+        <div id="logInForm">
+            <h2>Log In</h2>
+            <input type="email" id="logInEmail" placeholder="Email" required>
+            <input type="password" id="logInPassword" placeholder="Password" required>
+            <button onclick="logIn()">Log In</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
